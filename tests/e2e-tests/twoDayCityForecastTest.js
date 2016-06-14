@@ -13,7 +13,7 @@ describe('Fetching a 2 day forecast for Dublin', function() {
 
         var city = element(by.model('city'));
         city.clear();
-        city.sendKeys('Waterford, Ireland');
+        city.sendKeys('Dublin, Ireland');
 
         element(by.css('.btn')).click().then(function() {
             expect(browser.getLocationAbsUrl()).toMatch("/forecast");
